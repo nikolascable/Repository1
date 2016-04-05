@@ -413,12 +413,12 @@ p {
 }
 
 .btn-primary {
-  color: #fff;
-  background-color: #428bca;
-  border: 1px solid #428bca;
+  color: #254117;
+  background-color: #848b79;
+  border: 1px solid #848b79;
 }
 .btn-primary:active, .btn-primary.active {
-  color: #fff;
+  color: #254117;
   background-color: #3071a9;
   border: 1px solid #3071a9;
 }
@@ -522,7 +522,7 @@ input[type="button"] {
   height: 100px;
   padding-right: 10px;
   padding-left: 10px;
-  background-color: cyan;
+  background-color: #98AfC7;
   border-bottom: 1px sold #ddd;
 
   -webkit-backface-visibility: hidden;
@@ -562,11 +562,11 @@ input[type="button"] {
   width: 100%;
   padding: 30px;
   margin: 0 -10px;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Helvetica Neue", cursive, sans-serif;
   font-size: 50px;
   font-weight: 800;
   line-height: 44px;
-  color: #000;
+  color: #2B547E;
   text-align: center;
   white-space: nowrap;
 }
@@ -589,7 +589,7 @@ input[type="button"] {
   display: table-cell;
   width: 1%;
   height: 50px;
-  color: #929292;
+  color: #2B547E;
   text-align: center;
   vertical-align: middle;
 }
