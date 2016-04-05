@@ -58,9 +58,10 @@ a {
 
 .funds {
   background-color: #D3D3D3;
-/*  padding features inside a div are the amount of paddthing elements inside the div receive?*/
+/*  padding features inside a div are the amount of paddthing elements inside the div receive. Idk why padding
+the top and bottom of the overall div funds moves enlarges the div*/
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 100px;
 }
 
 .QR_code {
@@ -70,8 +71,8 @@ a {
 
 #balance {
   text-align: left;
-  padding-left: 50px;
-  font-size: 50px;
+  padding-left: 30px;
+  font-size: 40px;
 }
 
 #actual_amount{
