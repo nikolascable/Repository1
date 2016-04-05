@@ -52,13 +52,51 @@ template {
   display: none;
 }
 
+.comment {
+  padding: 20px
+}
+
 a {
   background: transparent;
 }
 
-.map {
-  padding-top: 60px;
+li+li{
+    border-top: 1px solid #000000;
+}
 
+ul{ 
+    font-size: 20px
+ }
+
+li{
+  list-style-type: none;
+}
+
+
+#reviews_header {
+  font-size: 30px;
+  text-align: left;
+  padding-left: 30px;
+  background-color: grey;
+  padding-top: 25px;
+  padding-bottom: 25px; 
+}
+
+#data1 {
+  display: inline;
+}
+/*
+#data1 img{
+  margin-top: 20px;
+}*/
+
+
+#data2 {
+  display: inline;
+}
+
+#data2 img{
+  margin-top: 70px;
 }
 
 .funds {
@@ -387,6 +425,11 @@ p {
   color: #777;
 }
 
+.buttons {
+  padding: 50px;
+  padding-top: 175px;
+}
+
 .btn {
   position: relative;
   display: inline-block;
@@ -400,7 +443,7 @@ p {
   white-space: nowrap;
   vertical-align: top;
   cursor: pointer;
-  background-color: white;
+  background-color: yellow;
   border: 1px solid #ccc;
   border-radius: 3px;
 }
@@ -418,7 +461,7 @@ p {
   border: 1px solid #848b79;
 }
 .btn-primary:active, .btn-primary.active {
-  color: #254117;
+  color: #fff;
   background-color: #3071a9;
   border: 1px solid #3071a9;
 }
@@ -523,7 +566,6 @@ input[type="button"] {
   padding-right: 10px;
   padding-left: 10px;
   background-color: #98AfC7;
-  border-bottom: 1px sold #ddd;
 
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
@@ -534,7 +576,7 @@ input[type="button"] {
 }
 
 .bar-footer {
-  bottom: 0;
+  bottom: 0px;
 }
 
 .bar-footer-secondary {
@@ -548,7 +590,7 @@ input[type="button"] {
 .bar-footer,
 .bar-footer-secondary,
 .bar-footer-secondary-tab {
-  border-top: 1px solid #ddd;
+  border-top: 0;
   border-bottom: 0;
 }
 
@@ -582,7 +624,7 @@ input[type="button"] {
   height: 50px;
   padding: 0;
   table-layout: fixed;
-  border-top: 1px solid #ddd;
+  border-top: 0;
   border-bottom: 0;
 }
 .bar-tab .tab-item {
