@@ -16,18 +16,19 @@
     <link rel="stylesheet" href="css/ratchet-theme-ios.min.css">
     <link rel="stylesheet" href="css/app.css">
     <link href="ratchet.css" rel="stylesheet">
-
     <!-- Include the compiled Ratchet JS -->
     <script src="ratchet.js"></script>
   </head>
   <body>
 
     <!-- Make sure all your bars are the first things in your <body> -->
-    <header class="bar bar-nav">
-      <h1 class="title">MBTA</h1>
-    </header>
+    <div>
+      <header class="bar bar-nav">
+        <h1 class="title">Current Trip</h1>
+      </header>
+    </div>
       
-    <nav class="bar bar-tab">
+<nav class="bar bar-tab">
   <a class="tab-item active" href="#">
     <span class="icon icon-home"></span>
     <span class="tab-label">Home</span>
@@ -55,10 +56,9 @@
     <div class="content">
 
 
-      <div class="QR_code"> <img src="static_qr_code_without_logo.jpg"> </div>
-      <!-- <p class="content-padded">Thanks for downloading Ratchet. This is an example HTML page that's linked up to compiled Ratchet CSS and JS, has the proper meta tags and the HTML structure. Need some more help before you start filling this with your own content? Check out some Ratchet resources:</p> -->
+      <div class="map"><img src="map.jpg"></div>
+      <div class="directions"> <img src="directions.png"> </div>
 
-      <div class="funds"> <p id="balance"> Balance: <p> <p id="actual_amount"> {TEXT} </p> </div>
 <!-- 
       <div class="card">
         <ul class="table-view">
