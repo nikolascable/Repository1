@@ -85,6 +85,30 @@ li{
 #data1 {
   display: inline;
 }
+
+
+.updates-block{
+  padding-top: 60px;
+}
+
+.update{
+  margin-top: 10px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 2px;
+}
+
+.update.update-one {
+  padding-bottom: 250px;
+}
+
+.delay{
+  margin-top: 10px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 2px;
+}
+
 /*
 #data1 img{
   margin-top: 20px;

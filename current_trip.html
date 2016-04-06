@@ -11,31 +11,29 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-    <!-- Include the compiled Ratchet CSS -->
-    
+    <!-- Include the compiled Ratchet CSS -->    
     <link rel="stylesheet" href="css/ratchet.min.css">
-    <link rel="stylesheet" href="css/ratchet-theme-ios.css">
-    <link href="ratchet.css" rel="stylesheet">
-    
+    <link rel="stylesheet" href="css/ratchet-theme-ios.min.css">
     <link rel="stylesheet" href="css/app.css">
-      
+    <link href="ratchet.css" rel="stylesheet">
     <!-- Include the compiled Ratchet JS -->
     <script src="ratchet.js"></script>
-      
   </head>
-<body>
+  <body>
 
     <!-- Make sure all your bars are the first things in your <body> -->
-    <header class="bar bar-nav">
-      <h1 class="title">MBTA: Updates</h1>
-    </header>
+    <div>
+      <header class="bar bar-nav">
+        <h1 class="title">Current Trip</h1>
+      </header>
+    </div>
       
-    <nav class="bar bar-tab">
+<nav class="bar bar-tab">
   <a class="tab-item active" href="#">
     <span class="icon icon-home"></span>
     <span class="tab-label">Home</span>
-  </a>
-  <a class="tab-item" href="#">
+  </a
+>  <a class="tab-item" href="#">
     <span class="icon icon-search"></span>
     <span class="tab-label">Search</span>
   </a>
@@ -56,6 +54,37 @@
 
     <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
     <div class="content">
-    <img src="subway-spider.jpg">
+
+
+      <div class="map"><img src="map.jpg"></div>
+      <div class="directions"> <img src="directions.png"> </div>
+
+<!-- 
+      <div class="card">
+        <ul class="table-view">
+          <li class="table-view-cell">
+            <a class="push-right" href="http://goratchet.com">
+              <strong>Ratchet documentation</strong>
+            </a>
+          </li>
+          <li class="table-view-cell">
+            <a class="push-right" href="https://github.com/twbs/ratchet/">
+              <strong>Ratchet on Github</strong>
+            </a>
+          </li>
+          <li class="table-view-cell">
+            <a class="push-right" href="https://groups.google.com/forum/#!forum/goratchet">
+              <strong>Ratchet Google group</strong>
+            </a>
+          </li>
+          <li class="table-view-cell">
+            <a class="push-right" href="https://twitter.com/goratchet">
+              <strong>Ratchet on Twitter</strong>
+            </a>
+          </li>
+        </ul>
+      </div> -->
     </div>
-</body>
+
+  </body>
+</html>
