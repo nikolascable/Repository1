@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
+    <head>
     <meta charset="utf-8">
     <title>Ratchet template page</title>
 
@@ -12,46 +12,47 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
     <!-- Include the compiled Ratchet CSS -->
-    
+
     <link rel="stylesheet" href="css/ratchet.min.css">
     <link rel="stylesheet" href="css/ratchet-theme-ios.css">
-    <link rel="stylesheet" href="css/app.css">
     <link href="ratchet.css" rel="stylesheet">
-    
+
+    <link rel="stylesheet" href="css/app.css">
+
     <!-- Include the compiled Ratchet JS -->
     <script src="ratchet.js"></script>
-      
+
   </head>
   <body>
-    <header class="bar bar-nav">
-      <h1 class="title">Info</h1>
+   <header class="bar bar-nav">
+      <h1 class="title">Costs</h1>
     </header>
 
-    <div class="content">
+  <div class="content">
 
-<div class="buttons">
-  <button onclick="location.href='map.html'"; class="btn btn-primary btn-block">Transit System Map</button>
-  <button onclick="location.href='stats.html'"; class="btn btn-primary btn-block">Statistics/Reviews</button>
-  <button onclick="location.href='costs.html'"; class="btn btn-primary btn-block">Ticket Costs</button>
-  <button onclick="location.href='updates_delays.html'"; class="btn btn-primary btn-block">Updates/Delays</button>
-</div>
-
+      <form class="content-padded">
+        <input type="text" placeholder="Enter Starting Point">
+        <input type="text" placeholder="Enter Destination">
+        <input type="text" placeholder="Number of People Traveling">
+        <button class="btn btn-primary btn-block">Submit</button>
+      </form>
+    </div>
 
 <nav class="bar bar-tab">
-  <a class="tab-item active" onclick="location.href='mockup.html'">
+  <a class="tab-item active" href="#">
     <span class="icon icon-home"></span>
     <span class="tab-label">Home</span>
   </a>
-  <a class="tab-item" onclick="location.href='purchasehistory.html'">
+  <a class="tab-item" href="#">
     <span class="icon icon-person"></span>
     <span class="tab-label">Profile</span>
   </a>
-  <a class="tab-item" onclick="location.href='current_trip.html'">
+  <a class="tab-item" href="#">
     <span class="icon icon-star-filled"></span>
     <span class="tab-label">Favorites</span>
   </a>
-  <a class="tab-item" onclick="location.href='info.html'">
-    <span class="icon icon-search"></span>
+  <a class="tab-item" href="#">
+    <span class="icon icon-gear"></span>
     <span class="tab-label">Search</span>
   </a>
   <a class="tab-item" href="#">
@@ -63,7 +64,7 @@
     </div><!-- /.content -->
 
     <!-- Compose modal -->
-    <!-- <div id="composeModal" class="modal">
+    <div id="composeModal" class="modal">
       <header class="bar bar-nav">
         <a class="btn btn-link pull-right" href="#composeModal">
           <strong>Send</strong>
@@ -82,7 +83,6 @@
           <textarea rows="20"></textarea>
         </form>
       </div>
-    </div> -->
-    <!-- /.modal -->
+    </div><!-- /.modal -->
   </body>
 </html>

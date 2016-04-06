@@ -52,6 +52,11 @@ template {
   display: none;
 }
 
+
+.search-box{
+  padding-top: 70px;
+}
+
 .comment {
   padding: 20px
 }
