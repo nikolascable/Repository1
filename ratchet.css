@@ -53,6 +53,15 @@ template {
 }
 
 
+.map_trip {
+  text-align: center;
+/*  top: 0; right: 0; bottom: 0; left: 0;
+*/}
+
+.directions{
+  text-align: center;
+}
+
 .search-box{
   padding-top: 70px;
 }
