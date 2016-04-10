@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Ratchet template page</title>
+    <title>OneCard</title>
 
     <!-- Sets initial viewport load and disables zooming  -->
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
@@ -30,17 +30,7 @@
       <h1 class="title">Krzsyztof</h1>
     </header>
 
-    <div class="content">
-
-<!-- <div class="buttons">
-  <button onclick="location.href='updatepayment.html'"; class="btn btn-primary btn-block">Update Payment Info</button>
-  <button onclick="location.href='stats.html'"; class="btn btn-primary btn-block">My Transit Systems</button>
-  <button onclick="location.href='purchasehistory.html'"; class="btn btn-primary btn-block">Purchasing History</button>
-  <button onclick="location.href='addvalue.html'"; class="btn btn-primary btn-block">Add Value</button>
-</div> -->
-
-
-<nav class="bar bar-tab">
+    <nav class="bar bar-tab">
   <a class="tab-item" onclick="location.href='mockup.html'">
     <span class="icon icon-home"></span>
     <span class="tab-label">Home</span>
@@ -60,12 +50,35 @@
   </a>
 </nav>
 
+    <div class="content">
 
+
+
+
+<h1> Add Value </h1>     
     <form>
-      <br>
        <input type="text" placeholder="Enter Amount in $">
-      <button class="btn btn-positive btn-block" onclick="addValue()">Add Value</button>
+      <button class="btn btn-positive btn-block">Add Value</button>
     </form>
+<h1> Update Payment Info </h1>  
+<form>
+      <br>
+      <ul class="table-view">
+      
+      <li class="table-view-divider">Current Card: xxxxxxxxxxxx5293</li>
+    
+    </ul>
+      
+      <input type="text" placeholder="Full name">
+
+    
+       <input type="text" placeholder="New Credit Card Number">
+       <input type="text" placeholder="CVV">
+      <button class="btn btn-positive btn-block">Update Payment Info</button>
+      <br>
+    
+    </form>
+      
       
 <h1> Payment History </h1>      
 
@@ -73,9 +86,9 @@
 <div class="hello">sdfasdf</div>
 
 <ul class="table-view">
-  <li class="table-view-cell">Harvard <> MIT bus <button class="btn">Button</button></li>
-  <li class="table-view-cell">MIT <> Harvard bus <button class="btn btn-positive">Accept</button></li>
-  <li class="table-view-cell">Park <> South Station subway <button class="btn btn-positive">Accept</button></li>
+  <li class="table-view-cell">Harvard <> MIT bus <button class="btn btn-positive">$2.50</button></li>
+  <li class="table-view-cell">MIT <> Harvard bus <button class="btn btn-positive">$2.50</button></li>
+  <li class="table-view-cell">Park <> South Station subway <button class="btn btn-positive">$3.00</button></li>
   <li class="table-view-cell">South Station <> MIT subway <button class="btn btn">Confirmed</button></li>
 </ul>
       
