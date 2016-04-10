@@ -1542,3 +1542,13 @@ select {
 .icon-left:before {
   content: '\e822';
 }
+
+.centered{
+  text-align: center;
+
+}
+.centered_img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
