@@ -23,17 +23,42 @@
       
   </head>
   <body>
-    <header class="bar bar-nav">
-      <h1 class="title">Info</h1>
-    </header>
+    
 
-    <div class="content">
+<div class="content">
 
-<div class="buttons">
-  <button onclick="location.href='map.html'"; class="btn btn-primary btn-block">Transit System Map</button>
-  <button onclick="location.href='stats.html'"; class="btn btn-primary btn-block">Statistics/Reviews</button>
-  <button onclick="location.href='costs.html'"; class="btn btn-primary btn-block">Ticket Costs</button>
-  <button onclick="location.href='updates_delays.html'"; class="btn btn-primary btn-block">Updates/Delays</button>
+<div class="segmented-control">
+  <a class="control-item active" href="#item1mobile">
+    Updates/Delays
+  </a>
+  <a class="control-item" href="#item2mobile">
+    Statistics/Reviews
+  </a>
+</div>
+
+<div class="card">
+    <div id="item1mobile" class = "control-content active">
+    <div class="update update-one">Notice: Due to shark tornadoes, the Red Line will be closed until further notice. 3/30/2016</div>
+    <div class="delay"><strong>5:55 pm 3/30/2016 10 min delay:</strong> Green Line toward Heath Street.</div>
+    <div class="delay"><strong>8:15 am 3/29/2016 5 min delay:</strong> Red Line toward Alewife.</div>
+    <div class="delay">Notice: There will be free cupcakes on all Red Line trains between 10 am to 3 pm. Happy Holidays! 12/22/2015 </div>
+    </div>
+    
+    <div id="item2mobile" class = "control-content">
+      <img id="data1" src="graph1.png" height="200">
+
+      <div id="data2"> <img src="graph2.png" height="300"> </div>
+
+      <div id="reviews_header"> Reviews </div> 
+
+      <div class="reviews">
+       <ul>
+         <li> <div class="comment"> I hate this bus! </div> </li>
+         <li> <div class="comment"> The red line is awesome! </div> </li>
+         <li> <div class="comment"> Why is Charles MGH T stop always so crowded? </div> </li>
+      </ul>
+     </div>
+   </div>
 </div>
 
 
