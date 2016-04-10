@@ -19,10 +19,12 @@
     <link href="ratchet.css" rel="stylesheet">
     
     <!-- Include the compiled Ratchet JS -->
-    <script src="ratchet.js"></script>
-    <script src="repo1.js"></script>
+<!--     <script src="ratchet.js"></script>
+ -->    
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+    <script src="repo1.js"></script>
+
       
   </head>
   <body>
@@ -50,7 +52,7 @@
   </a>
 </nav>
 
-    <div class="content">
+    <div id="content">
 
 
 
@@ -58,7 +60,7 @@
 <h1> Add Value </h1>     
     <form>
        <input type="text" placeholder="Enter Amount in $">
-      <button class="btn btn-positive btn-block">Add Value</button>
+      <button class="btn btn-positive btn-block" onclick="addValue()">Add Value</button>
     </form>
 <h1> Update Payment Info </h1>  
 <form>
