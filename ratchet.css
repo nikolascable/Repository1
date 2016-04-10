@@ -381,7 +381,7 @@ a:active {
 }
 
 .bar-nav ~ .content {
-  padding-top: 44px;
+  padding-top: 100px;
 }
 
 .bar-header-secondary ~ .content {
