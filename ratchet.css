@@ -53,10 +53,10 @@ template {
 }
 
 
-.map_trip {
+.map{
   text-align: center;
-/*  top: 0; right: 0; bottom: 0; left: 0;
-*/}
+  background-image: url("map.jpg");
+}
 
 .directions{
   text-align: center;
