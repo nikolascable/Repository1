@@ -29,36 +29,53 @@
 
     <div class="content">
 
-<div class="buttons">
+<!-- <div class="buttons">
   <button onclick="location.href='updatepayment.html'"; class="btn btn-primary btn-block">Update Payment Info</button>
   <button onclick="location.href='stats.html'"; class="btn btn-primary btn-block">My Transit Systems</button>
   <button onclick="location.href='purchasehistory.html'"; class="btn btn-primary btn-block">Purchasing History</button>
   <button onclick="location.href='addvalue.html'"; class="btn btn-primary btn-block">Add Value</button>
-</div>
+</div> -->
 
 
 <nav class="bar bar-tab">
-  <a class="tab-item active" onclick="location.href='mockup.html'">
+  <a class="tab-item" onclick="location.href='mockup.html'">
     <span class="icon icon-home"></span>
     <span class="tab-label">Home</span>
   </a>
-  <a class="tab-item" onclick="location.href='page2.html'">
+
+  <a class="tab-item" onclick="location.href='current_trip.html'">
     <span class="icon icon-search"></span>
     <span class="tab-label">Search</span>
-  </a>
-  <a class="tab-item" onclick="location.href='profile.html'">
-    <span class="icon icon-person"></span>
-    <span class="tab-label">Profile</span>
-  </a>
-  <a class="tab-item" onclick="location.href='current_trip.html'">
-    <span class="icon icon-caret"></span>
-    <span class="tab-label">Current Trip</span>
   </a>
   <a class="tab-item" onclick="location.href='info.html'">
     <span class="icon icon-info"></span>
     <span class="tab-label">Info</span>
   </a>
+    <a class="tab-item active" onclick="location.href='user.html'">
+    <span class="icon icon-person"></span>
+    <span class="tab-label">Profile</span>
+  </a>
 </nav>
+
+
+    <form>
+      <br>
+      
+      
+       <input type="text" placeholder="Enter Amount in $">
+      <button class="btn btn-positive btn-block">Add Value</button>
+    </form>
+      
+<h1> Payment History </h1>      
+
+<ul class="table-view">
+  <li class="table-view-cell">Harvard <> MIT bus <button class="btn">Button</button></li>
+  <li class="table-view-cell">MIT <> Harvard bus <button class="btn btn-positive">Accept</button></li>
+  <li class="table-view-cell">Park <> South Station subway <button class="btn btn-positive">Accept</button></li>
+  <li class="table-view-cell">South Station <> MIT subway <button class="btn btn">Confirmed</button></li>
+</ul>
+      
+
 
     </div>
 
