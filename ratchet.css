@@ -805,8 +805,7 @@ input[type="button"] {
   margin: 10px;
   overflow: hidden;
   background-color: white;
-  border: 1px solid #ddd;
-  border-radius: 6px;
+  border: none;
 }
 
 .card .table-view {

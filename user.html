@@ -49,47 +49,57 @@
 
     <div class="content">
 
+<div class="segmented-control">
+  <a class="control-item active" href="#item1mobile">
+    Add Value
+  </a>
+  <a class="control-item" href="#item2mobile">
+    Payment Info
+  </a>
+  <a class="control-item" href="#item3mobile">
+    Payment History
+  </a>
+</div>
 
-
-
-<h1> Add Value </h1>     
-    <form>
+<div class="card">
+    <div id="item1mobile" class = "control-content active">
+       <form>
+        <br>
+        <br>
+         <h1 style="text-align: center"> Balance: $20.00 </h1>
+        <br>
+        <br>
        <input type="text" placeholder="Enter Amount in $">
       <button class="btn btn-positive btn-block">Add Value</button>
+      <br>
     </form>
-<h1> Update Payment Info </h1>  
-<form>
+    </div>
+    
+    <div id="item2mobile" class = "control-content">
+      <form>
       <br>
       <ul class="table-view">
-      
       <li class="table-view-divider">Current Card: xxxxxxxxxxxx5293</li>
-    
-    </ul>
+      <br>
+      </ul>
       
       <input type="text" placeholder="Full name">
-
-    
-       <input type="text" placeholder="New Credit Card Number">
-       <input type="text" placeholder="CVV">
+      <input type="text" placeholder="New Credit Card Number">
+      <input type="text" placeholder="CVV">
       <button class="btn btn-positive btn-block">Update Payment Info</button>
       <br>
-    
-
-    </form>
-      
-      
-<h1> Payment History </h1>      
-
-<ul class="table-view">
-  <li class="table-view-cell">Harvard <> MIT bus <button class="btn btn-positive">$2.50</button></li>
-  <li class="table-view-cell">MIT <> Harvard bus <button class="btn btn-positive">$2.50</button></li>
-  <li class="table-view-cell">Park <> South Station subway <button class="btn btn-positive">$3.00</button></li>
-  <li class="table-view-cell">South Station <> MIT subway <button class="btn btn">Confirmed</button></li>
-</ul>
-      
-
-
+      </form>
     </div>
+
+    <div id="item3mobile" class = "control-content">
+      <ul class="table-view">
+      <li class="table-view-cell">Harvard <> MIT bus <button class="btn btn-positive">$2.50</button></li>
+      <li class="table-view-cell">MIT <> Harvard bus <button class="btn btn-positive">$2.50</button></li>
+      <li class="table-view-cell">Park <> South Station subway <button class="btn btn-positive">$3.00</button></li>
+      <li class="table-view-cell">South Station <> MIT subway <button class="btn btn-positive">$2.00</button></li>
+      </ul>
+  </div>     
+</div>
 
   </body>
 </html>
