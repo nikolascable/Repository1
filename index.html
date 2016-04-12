@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Ratchet template page</title>
+    <title>OneCard</title>
 
     <!-- Sets initial viewport load and disables zooming  -->
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
@@ -19,6 +19,9 @@
 
     <!-- Include the compiled Ratchet JS -->
     <script src="ratchet.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="repo1.js"></script>
       
   </head>
   <body>
@@ -26,6 +29,11 @@
     <!-- Make sure all your bars are the first things in your <body> -->
     <header class="bar bar-nav">
       <h1 class="title">MBTA</h1>
+        <div class="search-box">
+          <form>
+              <span><input type="text" class="search rounded" placeholder="Search transit systems ..."></span>
+          </form>
+        </div>
     </header>
       
 <nav class="bar bar-tab">
@@ -33,58 +41,36 @@
     <span class="icon icon-home"></span>
     <span class="tab-label">Home</span>
   </a>
-  <a class="tab-item" onclick="location.href='page2.html'">
+
+  <a class="tab-item" onclick="location.href='current_trip.html'">
     <span class="icon icon-search"></span>
     <span class="tab-label">Search</span>
-  </a>
-  <a class="tab-item" onclick="location.href='profile.html'">
-    <span class="icon icon-person"></span>
-    <span class="tab-label">Profile</span>
-  </a>
-  <a class="tab-item" onclick="location.href='current_trip.html'">
-    <span class="icon icon-caret"></span>
-    <span class="tab-label">Current Trip</span>
   </a>
   <a class="tab-item" onclick="location.href='info.html'">
     <span class="icon icon-info"></span>
     <span class="tab-label">Info</span>
   </a>
+    <a class="tab-item" onclick="location.href='user.html'">
+    <span class="icon icon-person"></span>
+    <span class="tab-label">Profile</span>
+  </a>
 </nav>
     
 
     <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
-    <div class="content">
+    <div id="content">
 
 
-      <div class="QR_code"> <img src="static_qr_code_without_logo.jpg"> </div>
-      <!-- <p class="content-padded">Thanks for downloading Ratchet. This is an example HTML page that's linked up to compiled Ratchet CSS and JS, has the proper meta tags and the HTML structure. Need some more help before you start filling this with your own content? Check out some Ratchet resources:</p> -->
+      <div class="QR_code"> <img src="static_qr_code_without_logo.jpg"> 
+      </div>
+  
+      
+      <div id="funds" class="funds"> 
+        <p id="balance"> </p> 
+        <br>
+        <p id="actual_amount"> </p>
+      </div>
 
-      <div class="funds"> <p id="balance"> Balance: <p> <p id="actual_amount"> {TEXT} </p> </div>
-<!-- 
-      <div class="card">
-        <ul class="table-view">
-          <li class="table-view-cell">
-            <a class="push-right" href="http://goratchet.com">
-              <strong>Ratchet documentation</strong>
-            </a>
-          </li>
-          <li class="table-view-cell">
-            <a class="push-right" href="https://github.com/twbs/ratchet/">
-              <strong>Ratchet on Github</strong>
-            </a>
-          </li>
-          <li class="table-view-cell">
-            <a class="push-right" href="https://groups.google.com/forum/#!forum/goratchet">
-              <strong>Ratchet Google group</strong>
-            </a>
-          </li>
-          <li class="table-view-cell">
-            <a class="push-right" href="https://twitter.com/goratchet">
-              <strong>Ratchet on Twitter</strong>
-            </a>
-          </li>
-        </ul>
-      </div> -->
     </div>
 
   </body>

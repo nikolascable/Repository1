@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>OneCard</title>
+    <title>Ratchet template page</title>
 
     <!-- Sets initial viewport load and disables zooming  -->
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
@@ -19,21 +19,29 @@
     <link href="ratchet.css" rel="stylesheet">
     
     <!-- Include the compiled Ratchet JS -->
-<!--     <script src="ratchet.js"></script>
- -->    
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="repo1.js"></script>
-
+    <script type="text/javascript" src="repo1.js"> </script>
+    <script src="ratchet.js"></script>
       
   </head>
   <body>
     <header class="bar bar-nav">
-      <h1 class="title">Krzsyztof</h1>
+      <h1 class="title">Krszystof</h1>
     </header>
 
-    <nav class="bar bar-tab">
-  <a class="tab-item active" onclick="location.href='mockup.html'">
+    <div class="content">
+
+<!-- <div class="buttons">
+  <button onclick="location.href='updatepayment.html'"; class="btn btn-primary btn-block">Update Payment Info</button>
+  <button onclick="location.href='stats.html'"; class="btn btn-primary btn-block">My Transit Systems</button>
+  <button onclick="location.href='purchasehistory.html'"; class="btn btn-primary btn-block">Purchasing History</button>
+  <button onclick="location.href='addvalue.html'"; class="btn btn-primary btn-block">Add Value</button>
+</div> -->
+
+
+<nav class="bar bar-tab">
+  <a class="tab-item" onclick="location.href='index.html'">
     <span class="icon icon-home"></span>
     <span class="tab-label">Home</span>
   </a>
@@ -46,64 +54,49 @@
     <span class="icon icon-info"></span>
     <span class="tab-label">Info</span>
   </a>
-    <a class="tab-item" onclick="location.href='user.html'">
+    <a class="tab-item active" onclick="location.href='user.html'">
     <span class="icon icon-person"></span>
     <span class="tab-label">Profile</span>
   </a>
 </nav>
 
-    <div id="content">
-
-<div class="segmented-control">
-  <a class="control-item active" href="#item1mobile">
-    Add Value
-  </a>
-  <a class="control-item" href="#item2mobile">
-    Payment Info
-  </a>
-  <a class="control-item" href="#item3mobile">
-    Payment History
-  </a>
-</div>
-
-<div class="card">
-    <div id="item1mobile" class = "control-content active">
-       <form>
-        <br>
-        <br>
-         <h1 style="text-align: center"> Balance: $20.00 </h1>
-        <br>
-        <br>
+<h3 class= 'description'> Add Value </h3>     
+    <form>
        <input id="amount_input" type="text" placeholder="Enter Amount in $">
-      <button class="btn btn-positive btn-block" onclick="addValue()">Add Value</button>
-      <br>
+      <button class="btn btn-primary btn-block" onclick="addValue()">Add Value</button>
     </form>
-    </div>
-    
-    <div id="item2mobile" class = "control-content">
-      <form>
+<h3 class= 'description'> Update Payment Info </h3>  
+<form>
       <br>
-      <ul class="table-view">
-      <li class="table-view-divider">Current Card: xxxxxxxxxxxx5293</li>
-      <br>
-      </ul>
-      
       <input type="text" placeholder="Full name">
-      <input type="text" placeholder="New Credit Card Number">
-      <input type="text" placeholder="CVV">
-      <button class="btn btn-positive btn-block">Update Payment Info</button>
-      <br>
-    </div>
 
-    <div id="item3mobile" class = "control-content">
-      <ul class="table-view">
-      <li class="table-view-cell">Harvard <> MIT bus <button class="btn btn-positive">$2.50</button></li>
-      <li class="table-view-cell">MIT <> Harvard bus <button class="btn btn-positive">$2.50</button></li>
-      <li class="table-view-cell">Park <> South Station subway <button class="btn btn-positive">$3.00</button></li>
-      <li class="table-view-cell">South Station <> MIT subway <button class="btn btn-positive">$2.00</button></li>
-      </ul>
-  </div>     
-</div>
+    <ul class="table-view">
+      
+      <li class="table-view-divider">Current Card: xxxxxxxxxxxx5293</li>
+    
+    </ul>
+      
+       <input type="text" placeholder="New Credit Card Number">
+       <input type="text" placeholder="CVV">
+      <button class="btn btn-primary btn-block">Update Payment Info</button>
+      <br>
+    
+
+    </form>
+      
+      
+<h3 class= 'description'> Payment History </h3>      
+
+<ul class="table-view">
+  <li class="table-view-cell">Harvard <> MIT bus <button class="btn">Button</button></li>
+  <li class="table-view-cell">MIT <> Harvard bus <button class="btn btn-positive">Accept</button></li>
+  <li class="table-view-cell">Park <> South Station subway <button class="btn btn-positive">Accept</button></li>
+  <li class="table-view-cell">South Station <> MIT subway <button class="btn btn">Confirmed</button></li>
+</ul>
+      
+
+
+    </div>
 
   </body>
 </html>
