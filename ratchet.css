@@ -495,8 +495,8 @@ p {
 
 .btn-primary {
   color: #254117;
-  background-color: #848b79;
-  border: 1px solid #848b79;
+  background-color: #70C874;
+  border: 1px solid #70C874;
 }
 .btn-primary:active, .btn-primary.active {
   color: #fff;
@@ -1541,4 +1541,14 @@ select {
 
 .icon-left:before {
   content: '\e822';
+}
+
+.centered{
+  text-align: center;
+
+}
+.centered_img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
