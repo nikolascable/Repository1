@@ -75,9 +75,10 @@ template {
     position: relative;
     top: -25px;
     left: 40px;
-    min-height: 30px;
+    min-height: 45px;
     font-size: 16px;
 }
+
 /*
 select:required:invalid {
   color: gray;
@@ -162,6 +163,8 @@ li{
 }
 
 .funds {
+    position: relative;
+    top: -20px;
   background-color: #D3D3D3;
 /*  padding features inside a div are the amount of paddthing elements inside the div receive. Idk why padding
 the top and bottom of the overall div funds moves enlarges the div*/
@@ -171,6 +174,8 @@ the top and bottom of the overall div funds moves enlarges the div*/
 
 .QR_code {
   text-align: center;
+    position: relative;
+    top: -20px;
 }
 
 #balance {
