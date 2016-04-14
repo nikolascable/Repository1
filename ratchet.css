@@ -52,7 +52,6 @@ template {
   display: none;
 }
 
-
 .map{
   text-align: center;
   background-image: url("map.jpg");
@@ -62,10 +61,34 @@ template {
   text-align: center;
 }
 
-.search-box{
-  padding-top: 70px;
-width: 200px;
+.search-block{
+    padding-top: 120px;
+    margin-left: 20px;
+    width: 250px;
 }
+
+#value{
+    font-size: 4.5vh;
+}
+
+.search-box{
+    position: relative;
+    top: -25px;
+    left: 40px;
+    min-height: 30px;
+    font-size: 16px;
+}
+/*
+select:required:invalid {
+  color: gray;
+}
+option[value=""][disabled] {
+  display: none;
+}
+option {
+  color: black;
+}
+*/
 
 .comment {
   padding: 20px
@@ -148,7 +171,6 @@ the top and bottom of the overall div funds moves enlarges the div*/
 
 .QR_code {
   text-align: center;
-
 }
 
 #balance {
