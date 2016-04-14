@@ -78,6 +78,10 @@ template {
     min-height: 45px;
     font-size: 16px;
 }
+.map-content{
+    position:relative;
+    top:100px;
+}
 
 /*
 select:required:invalid {

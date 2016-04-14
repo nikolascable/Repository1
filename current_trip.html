@@ -18,13 +18,36 @@
     <link href="ratchet.css" rel="stylesheet">
     <!-- Include the compiled Ratchet JS -->
     <script src="ratchet.js"></script>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
+      #floating-panel {
+        position: absolute;
+        top: 35px;
+        left: 25%;
+        z-index: 5;
+        background-color: #fff;
+        padding: 5px;
+        border: 1px solid #999;
+        text-align: center;
+        font-family: 'Roboto','sans-serif';
+        line-height: 30px;
+        padding-left: 10px;
+      }
+    </style>
   </head>
   <body>
 
     <!-- Make sure all your bars are the first things in your <body> -->
     <div>
       <header class="bar bar-nav">
-        <h1 class="title">Current Trip</h1>
+        <h1 class="title">Map</h1>
       </header>
     </div>
       
@@ -51,36 +74,46 @@
 
     <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
     <div class="content">
-
-
-      <div class="map"><img class=map_trip src="map.jpg"></div>
-      <div class="directions"> <img src="directions.png"> </div>
-
-<!-- 
-      <div class="card">
-        <ul class="table-view">
-          <li class="table-view-cell">
-            <a class="push-right" href="http://goratchet.com">
-              <strong>Ratchet documentation</strong>
-            </a>
-          </li>
-          <li class="table-view-cell">
-            <a class="push-right" href="https://github.com/twbs/ratchet/">
-              <strong>Ratchet on Github</strong>
-            </a>
-          </li>
-          <li class="table-view-cell">
-            <a class="push-right" href="https://groups.google.com/forum/#!forum/goratchet">
-              <strong>Ratchet Google group</strong>
-            </a>
-          </li>
-          <li class="table-view-cell">
-            <a class="push-right" href="https://twitter.com/goratchet">
-              <strong>Ratchet on Twitter</strong>
-            </a>
-          </li>
-        </ul>
-      </div> -->
+        <div class='map-content'>
+        <div class="segmented-control">
+          <a class="control-item active" href="#item1mobile">
+            Get Directions
+          </a>
+          <a class="control-item" href="#item2mobile">
+            Transit System Map
+          </a>
+        </div>
+        <div class="card">
+        <div id="item1mobile" class = "control-content active">
+        <div id="floating-panel">
+    <b>Start: </b>
+    <select id="start">
+      <option value="1">Countway Library, Shattuck St.</option>
+      <option value="2">Logan Intl. Airport</option>
+      <option value="3">Leverett House</option>
+      <option value="4">JP Licks, Massachusetts Ave.</option>
+      <option value="5">Toscano, Brattle St.</option>
+      <option value="6">H Mart, Central Square</option>
+    </select>
+    <b>End: </b>
+    <select id="end">
+      <option value="1">Countway Library, Shattuck St.</option>
+      <option value="2">Logan Intl. Airport</option>
+      <option value="3">Leverett House</option>
+      <option value="4">JP Licks, Massachusetts Ave.</option>
+      <option value="5">Toscano, Brattle St.</option>
+      <option value="6">H Mart, Central Square</option>
+    </select>
+    </div>
+          <div class="map"><img class=map_trip src="map.jpg"></div>
+          <div class="directions"> <img src="directions.png" width= '300px'> </div>
+        </div>
+        <div id="item2mobile" class = "control-content">
+          <div class="map-spider"><img src="subway-spider.jpg" width= '300px'></div>
+        </div>
+        </div>
+        </div>
+        
     </div>
 
   </body>
