@@ -24,10 +24,10 @@ var changeMaps = function(){
   		$("#start").on("change",function() {
     		var period = this.value;
     		if (period==0){
-    			var temp = "map.jpg";
+    			var temp = "img/map.jpg";
     		}
     		else {
-    			var temp = "map_"+period+".jpg";
+    			var temp = "img/map_"+period+".jpg";
     		}
     		var s = "<img class=map_trip src="+temp+" width='500px'>";
     		$(".map").html(s);
