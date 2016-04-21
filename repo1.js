@@ -23,6 +23,7 @@ var changeMaps = function(){
 	$(function() {
   		$("#start").on("change",function() {
     		var period = this.value;
+    		console.log(period);
     		if (period==0){
     			var temp = "map.jpg";
     		}
