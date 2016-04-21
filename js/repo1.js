@@ -16,6 +16,23 @@ var addValue = function() {
 
 }
 
+var addThree = function() {
+    var add_amt = 3;
+    var stored_temp = localStorage.getItem("stored");
+    if (stored_temp != null) {
+        stored=JSON.parse(stored_temp);
+    }
+    console.log(add_amt);
+    console.log(stored);
+    var new_balance=stored.balance+add_amt;
+    //storing again
+    stored.balance=new_balance;
+    var tostore=JSON.stringify(stored);
+    localStorage.setItem("stored", tostore);
+    alert("Success! Added $3");
+    $('.map-funds').text(new_balance);
+}
+
 //var select = document.querySelector("select");
 //var select = $("#myselect :selected").text();
 
@@ -25,10 +42,10 @@ var changeMaps = function(){
     		var period = this.value;
     		console.log(period);
     		if (period==0){
-    			var temp = "map.jpg";
+    			var temp = "img/map.jpg";
     		}
     		else {
-    			var temp = "map_"+period+".jpg";
+    			var temp = "img/map_"+period+".jpg";
     		}
     		var s = "<img class=map_trip src="+temp+" width='500px'>";
     		$(".map").html(s);
@@ -52,6 +69,7 @@ var init = function() {
 	var s1 = "Balance: $";
 	var s4 = s1+new_balance;
 	$(".card h1").text(s4);
+    $('.map-funds').text(new_balance);
     
 //    var sys = localStorage.getItem("system");
 //    var new_system = '';
@@ -60,23 +78,7 @@ var init = function() {
 //        new_system = system.sys;
 //    }
 //    $("#value").text(new_system);
-    
-    var select = document.querySelector("#myselect");
-    console.log(select);
-    var selectOption = select.options[select.selectedIndex];
-    var lastSelected = localStorage.getItem('select');
-
-    if(lastSelected) {
-        select.value = lastSelected;
-        $("#value").text(lastSelected);
-    }
-
-    select.onchange = function () {
-       lastSelected = select.options[select.selectedIndex].text;
-        $("#value").text(lastSelected);
-       console.log(lastSelected);
-       localStorage.setItem('select', lastSelected);
-    }
+	
 
 }
 
