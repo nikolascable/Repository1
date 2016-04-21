@@ -16,6 +16,23 @@ var addValue = function() {
 
 }
 
+var addThree = function() {
+    var add_amt = 3;
+    var stored_temp = localStorage.getItem("stored");
+    if (stored_temp != null) {
+        stored=JSON.parse(stored_temp);
+    }
+    console.log(add_amt);
+    console.log(stored);
+    var new_balance=stored.balance+add_amt;
+    //storing again
+    stored.balance=new_balance;
+    var tostore=JSON.stringify(stored);
+    localStorage.setItem("stored", tostore);
+    alert("Success! Added $3");
+    $('.map-funds').text(new_balance);
+}
+
 //var select = document.querySelector("select");
 //var select = $("#myselect :selected").text();
 
@@ -51,6 +68,7 @@ var init = function() {
 	var s1 = "Balance: $";
 	var s4 = s1+new_balance;
 	$(".card h1").text(s4);
+    $('.map-funds').text(new_balance);
     
 //    var sys = localStorage.getItem("system");
 //    var new_system = '';
