@@ -67,6 +67,14 @@ template {
     width: 250px;
 }
 
+.deleteThis{
+    height: 25px;
+    width: 25px;
+    font-weight: bold;
+    font-size: 10px;
+    position: absolute;
+    left: 300px;
+}
 #value{
     font-size: 4.5vh;
 }
@@ -103,6 +111,11 @@ option {
   padding: 20px;
   color: gray;
   font-size: 24px;
+}
+
+.comment-date {
+  padding: 20px;
+  color: gray;
 }
 
 a {
@@ -593,10 +606,11 @@ p {
 
 .btn-block {
   display: block;
-  width: 100%;
-  padding: 15px 0;
+  width: 92%;
+  padding: 15px;
   margin-bottom: 10px;
   font-size: 18px;
+  left: 20px;
 }
 
 input[type="submit"],
