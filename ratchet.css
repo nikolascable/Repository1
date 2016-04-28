@@ -67,6 +67,21 @@ template {
     width: 250px;
 }
 
+.trip-popover{
+    background-color: white
+}
+
+.dialog-title{
+    padding:10px
+}
+
+.popover .dialog-button{
+    float:left;
+    margin-right: 10px;
+    height: 50px;
+    width: 100px;
+}
+
 .deleteThis{
     height: 25px;
     width: 25px;
@@ -1168,7 +1183,7 @@ select {
 
 .popover {
   position: fixed;
-  top: 55px;
+  top: 120px;
   left: 50%;
   z-index: 20;
   display: none;
