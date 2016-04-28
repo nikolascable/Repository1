@@ -12,18 +12,19 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
     <!-- Include the compiled Ratchet CSS -->
-    
+
     <link rel="stylesheet" href="css/ratchet.min.css">
     <link rel="stylesheet" href="css/ratchet-theme-ios.css">
     <link rel="stylesheet" href="css/app.css">
     <link href="ratchet.css" rel="stylesheet">
-    
+
     <!-- Include the compiled Ratchet JS -->
     <script src="js/ratchet.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/repo1.js"> </script>
-      
+
+
   </head>
   <body>
     <header class="bar bar-nav">
@@ -77,22 +78,34 @@
       <br>
     </form>
     </div>
-    
-    <div id="item2mobile" class = "control-content">
+
+    <div id="item2mobile" class="control-content">
       <form>
-      <br>
-      <ul class="table-view">
-      <li class="table-view-divider">Current Card: xxxxxxxxxxxx5293</li>
+      <li class="comment-header">Current Credit Card Information</li>
+      <li id="one" class="comment"></li>
+      <li id="two" class="comment"></li>
+      <li id="three" class="comment"></li>
+      <li id="four" class="comment"></li>
       <br>
       </ul>
-      
-      <input type="text" placeholder="Full name">
-      <input type="text" placeholder="New Credit Card Number">
-      <input type="text" placeholder="CVV">
-      <button class="btn btn-positive btn-block">Update Payment Info</button>
+
+  <a href="#myModalexample" class="btn btn-positive btn-block">Update Credit Card Information</a>
+  <div id="myModalexample" class="modal">
+    <h1 class="title">Modal</h1>
+    </header>
+
+    <div class="content">
+    <p>
+      <input id="five" type="text" placeholder="Name on Card">
+      <input id="six" type="text" placeholder="New Credit Card Number">
+      <input id="seven" type="text" placeholder="Card Expiration Date">
+      <input id="eight" type="text" placeholder="CVV">
+      <a id="special" class="btn btn-positive btn-block" href="#myModalexample" onclick="return changevals();">Done</a>
       <br>
-      </form>
+    </p>
     </div>
+  </div>
+ </div>
 
     <div id="item3mobile" class = "control-content">
       <ul class="table-view">
@@ -101,7 +114,7 @@
       <li class="table-view-cell">Park Street -> South Station (Subway) <span class="badge">$3.00</span></li>
       <li class="table-view-cell">South Station -> MIT (Subway) <span class="badge">$2.00</span></li>
       </ul>
-  </div>     
+  </div>
 </div>
       </div>
   </body>

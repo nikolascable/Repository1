@@ -60,8 +60,13 @@ var trip_menu = function(){
     $('.toggle_button').toggle();
 }
 
+var nameoncard="Name on Card: Andrew Paek";
+var currentcard = "Current Card: ************5293";
+var expiration="Expiration Date: 4/30/2019";
+var cv = "CVV: **8";
 
-var init = function() {
+
+var init1 = function() {
 	var temp = localStorage.getItem("stored");
 	var new_balance=0;
 	if (temp != null){
@@ -76,9 +81,37 @@ var init = function() {
 	var s4 = s1+new_balance;
 	$(".card h1").text(s4);
     $('.map-funds').text(new_balance);
-    
-	
 
 }
 
-$(document).ready(init);
+var init2 = function(){
+	// credit card information on user.html
+    $('#one').text(nameoncard);
+    $('#two').text(currentcard);
+    $('#three').text(expiration);
+    $('#four').text(cv);
+}
+
+var changevals = function () {
+	// 0. create variables that are the values that display on the page
+	// 1. grab value of inputs
+	// 2. update variable values
+	// 3. refresh page?
+	var i1 = $('#five').val();
+	var i2 = $('#six').val();
+	var i2 = i2.slice(-4);
+	var i3 = $('#seven').val();
+	var i4 = $('#eight').val();
+	var i4 = i4[-1];
+	nameoncard = "Name on Card: "+i1;
+	currentcard = "Current Card: ************"+i2;
+	expiration = "Expiration Date: "+i3;
+	cv = "CV: **"+i4;
+	init2();
+	// $('#special').attr("href", "#item2mobile")
+	console.log("hello world");
+	return true;
+}
+
+$(document).ready(init1);
+$(document).ready(init2)
