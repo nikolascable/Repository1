@@ -68,7 +68,7 @@
     <span class="icon icon-info"></span>
     <span class="tab-label">Info</span>
   </a>
-    <a class="tab-item" onclick="location.href='user.html'">
+  <a class="tab-item" onclick="location.href='user.html'">
     <span class="icon icon-person"></span>
     <span class="tab-label">Profile</span>
   </a>
@@ -76,8 +76,10 @@
     
 
     <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+    
     <div class="content">
-        <div class='map-content'>
+
+      <div class='map-content'>
         <div class="segmented-control">
           <a class="control-item active" href="#item1mobile">
             Get Directions
@@ -86,30 +88,36 @@
             Transit System Map
           </a>
         </div>
-        <div class="card">
-        <div id="item1mobile" class = "control-content active">
-        <div id="floating-panel">
-    <b>Start: </b>
-    <select id="start">
-      <option value="0"> None </option>
-      <option value="1">Countway Library, Shattuck St.</option>
-      <option value="2">Logan Intl. Airport</option>
-      <option value="3">Leverett House</option>
-      <option value="4">JP Licks, Massachusetts Ave.</option>
-      <option value="5">Toscano, Brattle St.</option>
-      <option value="6">H Mart, Central Square</option>
-    </select>
-    <b>End: </b>
-    <select id="end">
-      <option value="0"> None </option>
-      <option value="1">Countway Library, Shattuck St.</option>
-      <option value="2">Logan Intl. Airport</option>
-      <option value="3">Leverett House</option>
-      <option value="4">JP Licks, Massachusetts Ave.</option>
-      <option value="5">Toscano, Brattle St.</option>
-      <option value="6">H Mart, Central Square</option>
-    </select>
-    </div>
+
+      <div class="card">
+      <div id="item1mobile" class = "control-content active">
+      <div class="toggle_button">
+          <a onclick="trip_menu()"><span class="icon icon-search"></span></a>
+      </div>
+      <div id="floating-panel">
+        <div class="trip_menu" style="display: none;">
+          <b>Start: </b>
+          <select id="start">
+            <option value="0"> None </option>
+            <option value="1">Countway Library, Shattuck St.</option>
+            <option value="2">Logan Intl. Airport</option>
+            <option value="3">Leverett House</option>
+            <option value="4">JP Licks, Massachusetts Ave.</option>
+            <option value="5">Toscano, Brattle St.</option>
+            <option value="6">H Mart, Central Square</option>
+          </select>
+          <b>End: </b>
+          <select id="end">
+            <option value="0"> None </option>
+            <option value="1">Countway Library, Shattuck St.</option>
+            <option value="2">Logan Intl. Airport</option>
+            <option value="3">Leverett House</option>
+            <option value="4">JP Licks, Massachusetts Ave.</option>
+            <option value="5">Toscano, Brattle St.</option>
+            <option value="6">H Mart, Central Square</option>
+          </select>
+        </div>
+  </div>
 
         <div class="map"> <img class=map_trip src="img/map.jpg" width='400px'> </div>
         <div class="directions"> <img src="img/directions.png" width= '300px'></div>

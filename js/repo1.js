@@ -49,9 +49,15 @@ var changeMaps = function(){
     		}
     		var s = "<img class=map_trip src="+temp+" width='500px'>";
     		$(".map").html(s);
-
+    		$('.trip_menu').toggle();
+    		$('.toggle_button').toggle();
 		});
 	});
+}
+
+var trip_menu = function(){
+    $('.trip_menu').toggle();
+    $('.toggle_button').toggle();
 }
 
 
@@ -71,13 +77,6 @@ var init = function() {
 	$(".card h1").text(s4);
     $('.map-funds').text(new_balance);
     
-//    var sys = localStorage.getItem("system");
-//    var new_system = '';
-//    if (system != null){
-//        var system = JSON.parse(sys);
-//        new_system = system.sys;
-//    }
-//    $("#value").text(new_system);
 	
 
 }
