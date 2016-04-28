@@ -90,6 +90,7 @@ var init2 = function(){
     $('#two').text(currentcard);
     $('#three').text(expiration);
     $('#four').text(cv);
+    console.log(nameoncard);
 }
 
 var changevals = function () {
@@ -102,15 +103,13 @@ var changevals = function () {
 	var i2 = i2.slice(-4);
 	var i3 = $('#seven').val();
 	var i4 = $('#eight').val();
-	var i4 = i4[-1];
+	var i4 = i4.slice(-1);
+	console.log(i4);
 	nameoncard = "Name on Card: "+i1;
 	currentcard = "Current Card: ************"+i2;
 	expiration = "Expiration Date: "+i3;
 	cv = "CV: **"+i4;
 	init2();
-	// $('#special').attr("href", "#item2mobile")
-	console.log("hello world");
-	return true;
 }
 
 $(document).ready(init1);
