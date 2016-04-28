@@ -52,6 +52,19 @@ template {
   display: none;
 }
 
+.toggle_button{
+  position: absolute;
+  left: 20px;
+  top: 50px;
+}
+
+#tt{
+  padding-top: 100px;
+  padding-left: 60px;
+  font-size: 20px;
+}
+
+
 .map{
   text-align: center;
   background-image: url("map.jpg");
@@ -62,7 +75,7 @@ template {
 }
 
 .search-block{
-    padding-top: 120px;
+    padding-top: 0px;
     margin-left: 20px;
     width: 250px;
 }
