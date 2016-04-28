@@ -13,6 +13,7 @@
 
     <!-- Include the compiled Ratchet CSS -->    
     <link rel="stylesheet" href="css/ratchet.min.css">
+    <link rel="stylesheet" href="css/ratchet.min.css">
     <link rel="stylesheet" href="css/ratchet-theme-ios.min.css">
     <link rel="stylesheet" href="css/app.css">
     <link href="ratchet.css" rel="stylesheet">
@@ -74,6 +75,36 @@
   </a>
 </nav>
     
+<div id="myPopover" class="popover trip-popover">
+  <header>
+    <h5 class="dialog-title">Are you sure you'd like to add $3?</h5>
+      <button class="btn btn-primary btn-block dialog-button">Yes</button>
+        <button class="btn btn-primary btn-block dialog-button">Cancel</button>
+    </header>
+<!--
+  <ul class="table-view">
+    <li class="table-view-cell">Item1</li>
+    <li class="table-view-cell">Item2</li>
+    <li class="table-view-cell">Item3</li>
+    <li class="table-view-cell">Item4</li>
+    <li class="table-view-cell">Item5</li>
+    <li class="table-view-cell">Item6</li>
+    <li class="table-view-cell">Item7</li>
+    <li class="table-view-cell">Item8</li>
+  </ul>
+-->
+</div>
+      
+<!--
+<header class="bar bar-nav">
+  <a href="#myPopover">
+    <h1 class="title">
+      Tap title
+      <span class="icon icon-caret"></span>
+    </h1>
+  </a>
+</header>
+-->
 
     <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
     
@@ -122,7 +153,7 @@
         <div class="map"> <img class=map_trip src="img/map.jpg" width='400px'> </div>
         <div class="directions"> <img src="img/directions.png" width= '300px'></div>
         <div>Current funds: $<span class='map-funds'></span></div>
-        <button class="btn btn-primary btn-block auto-add" onclick="addThree()">Add $3.00</button>
+            <a href = #myPopover><button class="btn btn-primary btn-block auto-add" onclick="addThree()">Add Money For This Trip</button></a>
         <br>
         <br>
 
@@ -131,8 +162,9 @@
           <div class="map-spider"><img src="img/subway-spider.jpg" width= '500px'></div>
         </div>
         </div>
-        </div>
-        
+
+    </div>
+
     </div>
 
   </body>
